@@ -1,0 +1,103 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Adrian Smo³a, AGH, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TARMCM1.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\strze\Dev\MPT\lab_3&4\Tut3\int_tutor.uvprojx
+Project File Date:  11/06/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'MKL05Z32'
+compiling system_MKL05Z4.c...
+main.c(14): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+void SysTick_Handler(void) {                                                    /* ToDo 4.1:  Put the name of SysTick handler */        
+     ^
+main.c(14): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SysTick_Handler(void) {                                                    /* ToDo 4.1:  Put the name of SysTick handler */        
+^
+static 
+1 warning generated.
+compiling main.c...
+buttons.c(27): warning: no previous prototype for function 'PORTB_IRQHandler' [-Wmissing-prototypes]
+void PORTB_IRQHandler(void){            /* ToDo 5.2: Put a proper name of PORTB Interrupt service routine ISR. See system_MKL05Z4.s file for function name */ 
+     ^
+buttons.c(27): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void PORTB_IRQHandler(void){            /* ToDo 5.2: Put a proper name of PORTB Interrupt service routine ISR. See system_MKL05Z4.s file for function name */ 
+^
+static 
+1 warning generated.
+compiling buttons.c...
+pit.c(16): warning: no previous prototype for function 'PIT_IRQHandler' [-Wmissing-prototypes]
+void PIT_IRQHandler() {
+     ^
+pit.c(16): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void PIT_IRQHandler() {
+^
+static 
+1 warning generated.
+compiling pit.c...
+fsm.c(43): warning: no previous prototype for function 'led_delay' [-Wmissing-prototypes]
+void led_delay(){
+     ^
+fsm.c(43): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void led_delay(){
+^
+static 
+fsm.c(140): warning: enumeration value 'StateC' not explicitly handled in switch [-Wswitch-enum]
+        switch(fsmState){
+               ^
+2 warnings generated.
+compiling fsm.c...
+linking...
+Program Size: Code=1624 RO-data=224 RW-data=8 ZI-data=360  
+".\Objects\int_tutor.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.15.0.pack
+                Keil.Kinetis_KLxx_DFP.1.15.0
+                NXP Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_MKL05Z32
+  C:\Users\strze\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\strze\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_MKL05Z4.s
+      Source file:   Device\Source\system_MKL05Z4.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
